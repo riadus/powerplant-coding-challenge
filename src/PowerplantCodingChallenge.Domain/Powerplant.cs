@@ -8,7 +8,5 @@ public class Powerplant
 	public float PowerMin { get; set; }
 	public float PowerMax { get; set; }
 
-	public float MinimumPrice { get; set; }
-	public float MaximumPrice { get; set; }
 	public float UnitPrice { get; set; }
 }

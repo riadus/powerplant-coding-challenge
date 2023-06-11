@@ -19,8 +19,7 @@ internal class GasFiredPowerplantEnricher : BasePowerplantEnricherStrategy, IPow
 
 		float co2Price = payload.Fuels.First(x => x.FuelType == FuelType.Co2).Price;
 		float averagePrice = fuel.Price / powerplant.Efficiency + GENERATED_CO2_PER_MWH_IN_TONS * co2Price;
-		powerplant.MinimumPrice = powerplant.PowerMin * averagePrice;
-		powerplant.MaximumPrice = powerplant.PowerMax * averagePrice;
+
 		powerplant.UnitPrice = averagePrice;
 		return powerplant;
 	}

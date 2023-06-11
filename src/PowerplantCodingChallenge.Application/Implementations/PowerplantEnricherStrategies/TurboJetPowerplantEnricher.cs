@@ -15,8 +15,6 @@ internal class TurboJetPowerplantEnricher : BasePowerplantEnricherStrategy, IPow
 	{
 		Fuel fuel = GetFuel(powerplant, payload);
 
-		powerplant.MinimumPrice = powerplant.PowerMin * fuel.Price / powerplant.Efficiency;
-		powerplant.MaximumPrice = powerplant.PowerMax * fuel.Price / powerplant.Efficiency;
 		powerplant.UnitPrice = fuel.Price / powerplant.Efficiency;
 
 		return powerplant;

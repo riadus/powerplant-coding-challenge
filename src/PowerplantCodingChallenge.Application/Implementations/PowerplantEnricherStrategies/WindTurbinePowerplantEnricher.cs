@@ -17,8 +17,6 @@ internal class WindTurbinePowerplantEnricher : BasePowerplantEnricherStrategy, I
 	{
 		Fuel fuel = GetFuel(powerplant, payload);
 
-		powerplant.MinimumPrice = 0;
-		powerplant.MaximumPrice = 0;
 		powerplant.UnitPrice = 0;
 		powerplant.PowerMax *= fuel.Price / 100; // Percentage of wind power
 		powerplant.PowerMin *= fuel.Price / 100; // Percentage of wind power

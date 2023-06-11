@@ -12,8 +12,6 @@ public class MapperProfile : Profile
 		CreateMap<PowerplantType, FuelType>().ConvertUsing(new PowerplantTypeToFuelTypeConverter());
 		CreateMap<PowerplantDto, Powerplant>()
 			.ForMember(dest => dest.Id, opt => opt.MapFrom(_ => Guid.NewGuid()))
-			.ForMember(dest => dest.MinimumPrice, opt => opt.Ignore())
-			.ForMember(dest => dest.MaximumPrice, opt => opt.Ignore())
 			.ForMember(dest => dest.UnitPrice, opt => opt.Ignore());
 		CreateMap<FuelsDto, List<Fuel>>().ConvertUsing(new FuelsDtoToFuelConverter());
 		CreateMap<PlayloadDto, Payload>();
