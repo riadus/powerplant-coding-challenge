@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PowerplantCodingChallenge.Domain\PowerplantCodingChallenge.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Mappers\" />
+    <None Remove="AutoMapper" />
+    <None Remove="Implementations\" />
+    <None Remove="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Dtos\" />
+    <None Remove="Implementations\PowerplantEnricherStrategies\" />
+    <None Remove="Validations\" />
+    <None Remove="FluentValidation" />
+    <None Remove="Ardalis.GuardClauses" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mappers\" />
+    <Folder Include="Implementations\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Implementations\PowerplantEnricherStrategies\" />
+    <Folder Include="Validations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  powerplantcodingchallenge:
+    image: ${DOCKER_REGISTRY-}powerplantcodingchallenge
+    build:
+      context: .
+      dockerfile: PowerplantCodingChallenge/Dockerfile

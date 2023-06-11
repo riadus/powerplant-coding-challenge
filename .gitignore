@@ -1,0 +1,10 @@
+src/obj/Debug
+src/obj
+src/PowerplantCodingChallenge.Application/bin
+src/PowerplantCodingChallenge.Application/obj
+src/PowerplantCodingChallenge.Domain/bin
+src/PowerplantCodingChallenge.Domain/obj
+src/PowerplantCodingChallenge.Tests/bin
+src/PowerplantCodingChallenge.Tests/obj
+src/PowerplantCodingChallenge/bin
+src/PowerplantCodingChallenge/obj
