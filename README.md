@@ -1,7 +1,7 @@
 # powerplant-coding-challenge
 
 
-## Welcome !
+## Welcome !!
 
 Below you can find the description of a coding challenge that we ask people to perform when applying for a job in our team.
 
